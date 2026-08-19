@@ -1,0 +1,10 @@
+{
+  "id": "getnote-sync",
+  "name": "得到大脑同步",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "自动同步得到大脑知识库到 Obsidian，并支持手动推送。",
+  "author": "wxd",
+  "isDesktopOnly": false
+}
+

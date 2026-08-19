@@ -1,0 +1,216 @@
+.getnote-sync-status {
+  margin-top: 12px;
+  color: var(--text-muted);
+  white-space: pre-wrap;
+}
+
+.getnote-dashboard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+.getnote-toolbar,
+.getnote-searchbar,
+.getnote-toolbar-actions,
+.getnote-list-controls,
+.getnote-chip-list,
+.getnote-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.getnote-toolbar h2 {
+  margin: 0;
+  flex: 1;
+  font-size: 18px;
+}
+
+.getnote-toolbar button,
+.getnote-searchbar button,
+.getnote-chip button,
+.getnote-detail-section > button {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+
+.getnote-searchbar input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.getnote-list-controls {
+  min-height: 32px;
+}
+
+.getnote-list-controls select {
+  min-width: 0;
+  flex: 1;
+}
+
+.getnote-list-controls button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.getnote-page-status {
+  min-width: 48px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.getnote-view-status,
+.getnote-note-meta,
+.getnote-detail-meta {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.getnote-dashboard-body {
+  min-height: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(220px, 38%) minmax(0, 1fr);
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.getnote-note-list,
+.getnote-note-detail {
+  overflow: auto;
+  min-width: 0;
+}
+
+.getnote-note-list {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.getnote-note-row {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 58px;
+  padding: 9px 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  background: transparent;
+}
+
+.getnote-note-row-container {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: center;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.getnote-note-row-container > input {
+  margin: 0 auto;
+}
+
+.getnote-note-row-container .getnote-note-row {
+  border-bottom: 0;
+}
+
+.getnote-empty {
+  padding: 18px 10px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.getnote-note-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.getnote-note-title {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.getnote-note-snippet {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.getnote-note-detail {
+  padding: 4px 14px 20px;
+}
+
+.getnote-note-detail h3 {
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.getnote-detail-section {
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: 16px;
+  padding-top: 12px;
+}
+
+.getnote-chip-list {
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.getnote-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 7px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.getnote-chip button {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+}
+
+.getnote-form-row {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  margin: 10px 0;
+}
+
+.getnote-form-row textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.getnote-conditional-link,
+.getnote-conditional-image {
+  display: none;
+}
+
+.getnote-create-link .getnote-conditional-link,
+.getnote-create-image .getnote-conditional-image {
+  display: grid;
+}
+
+.getnote-modal-actions {
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .getnote-dashboard-body {
+    grid-template-columns: 1fr;
+  }
+
+  .getnote-note-list {
+    border-right: 0;
+    max-height: 42vh;
+  }
+}
